@@ -1,44 +1,39 @@
-[![license][licenca-badge]][LICENSE]
+### Presentation
 
-### Apresentação
+This modification was developed in the OCMOD format (replacing VQMOD), and adds the possibility of installing extensions without using FTP in OpenCart, however, it keeps the FTP function working.
 
-Esta modificação foi desenvolvida no formato OCMOD (substituto do VQMOD), e adiciona a possibilidade de instalar extensões sem utilizar o FTP no OpenCart, porém, mantém a função FTP funcionando.
+One of the great advantages of this modification is that, when setting up your store in a local environment (on your pc or local server), you can install extensions through the OpenCart Extension Installer, without the need to use FTP.
 
-Uma das grandes vantagens desta modificação é permitir que, ao montar sua loja em ambiente local (no seu pc ou servidor local), você possa instalar extensões através do Instalador de Extensões do OpenCart, sem a necessidade da utilização do FTP.
+#### Important
 
-#### Importante
+As of version 3.0.0.0 of OpenCart, this feature became native, eliminating the need for this modification.
 
-A partir da versão 3.0.0.0 do OpenCart, esse recurso se tornou nativo, dispensando a utilização desta modificação.
+### Installation
 
-### Instalação
+ 1. Download the modification from the link: https://github.com/opencartbrasil/instalador-sem-ftp/archive/master.zip
+ 2. When downloading, unzip the contents of the zip file and locate the file "installer-without-ftp.ocmod.xml".
+ 3. In the store administration, access the menu ** Extensions → Installer ** (Extensions → Installer).
+ 4. On the installer page, click the ** Upload ** button, select the 'installer-without-ftp.ocmod.xml' file, and wait for the automatic installation to complete.
+ 5. After installation, access the menu ** Extensions → Modifications ** (Extensions → Modifications) and click the button ** Update ** (Refresh), so that the modification is added in the store, remembering that it is not the " Refresh "button of the browser, but the blue" Refresh "button next to the orange and red button on the OpenCart screen.
 
- 1. Baixe a modificação no link: https://github.com/opencartbrasil/instalador-sem-ftp/archive/master.zip
- 2. Ao baixar, descompacte o conteúdo do arquivo zip e localize o arquivo "instalador-sem-ftp.ocmod.xml".
- 3. Na administração da loja acesse o menu **Extensões→Instalador** (Extensions→Installer).
- 4. Na página do instalador, clique no botão **Upload**, selecione o arquivo 'instalador-sem-ftp.ocmod.xml', e aguarde a conclusão da instalação automática.
- 5. Após a instalação, acesse o menu **Extensões→Modificações** (Extensions→Modifications) e clique no botão **Atualizar** (Refresh), para que a modificação seja adicionada na loja, lembrando que não é o botão "Atualizar" do navegador, e sim o botão "Atualizar" na cor azul ao lado do botão laranja e vermelho na tela do próprio OpenCart.
+### Configuration
 
-### Configuração
+Access the store administration and go to the menu ** Settings → Stores ** (System → Settings), click the button ** Edit ** (Edit), click on the box ** FTP **, locate the field “** Enable FTP? ** "(Enable FTP), check the option" ** No ** "(No), and click the ** Save ** button.
 
-Acesse a administração da loja e vá no menu **Configurações→Lojas** (System→Settings), clique no botão **Editar** (Edit), clique na ba **FTP**, localize o campo "**Ativar FTP?**" (Enable FTP), marque a opção "**Não**" (No), e clique no botão **Salvar** (Save).
+### Uninstallation
 
-### Desinstalação
+To uninstall the modification, in the store administration, access the menu ** Extensions → Modifications ** (Extensions → Modifications), select the modification with the name '** Installer without FTP **', click the ** Delete ** button (Delete), and then the ** Refresh ** button.
 
-Para desinstalar a modificação, na administração da loja, acesse o menu **Extensões→Modificações** (Extensions→Modifications), selecione a modificação com o nome '**Instalador sem FTP**', clique no botão **Excluir** (Delete), e depois no botão **Atualizar** (Refresh).
+### Update
 
-### Atualização
+Access the store administration and perform the Uninstall procedure, then perform the Installation procedure.
 
-Acesse a administração da loja e execute o procedimento de Desinstalação, depois execute o procedimento de Instalação.
+### Doubts
 
-### Dúvidas
-
-O OCMOD (OpenCart Modification) é nativo do OpenCart, ou seja, não é necessário instalar nenhum complemento no OpenCart para utilizar modificações ou extensões no formato OCMOD, para mais informações sobre o OCMOD, segue o link para mais informações:
+OCMOD (OpenCart Modification) is native to OpenCart, that is, it is not necessary to install any add-on in OpenCart to use modifications or extensions in the OCMOD format, for more information about OCMOD, follow the link for more information:
 
 https://github.com/opencart/opencart/wiki/Modification-System
 
-### O arquivo alterado virtualmente através do OCMOD é:
+### The file changed virtually through OCMOD is:
 
-admin/controller/extension/**installer.php**
-
-[licenca-badge]: https://img.shields.io/badge/licença-GPLv3-blue.svg
-[LICENSE]: ./LICENSE
+admin / controller / extension / ** installer.php **
